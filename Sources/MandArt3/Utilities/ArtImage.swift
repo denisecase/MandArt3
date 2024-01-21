@@ -143,6 +143,8 @@ struct ArtImage {
             if rSq >= rSqLimit {
               break
             }
+            
+            
 
     //        xTemp = xx * xx - yy * yy + x0
     //        yy = 2 * xx * yy + y0
