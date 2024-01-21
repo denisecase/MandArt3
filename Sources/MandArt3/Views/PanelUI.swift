@@ -41,7 +41,7 @@ struct PanelUI: View {
 
   var body: some View {
     VStack {
-      Text("MandArt Inputs")
+      Text("MandArt3 Inputs")
         .font(.title)
         .padding(.top)
         
