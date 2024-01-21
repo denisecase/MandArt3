@@ -92,6 +92,7 @@ struct ArtImage {
     var xx = 0.0
     var yy = 0.0
     var xTemp = 0.0
+ //   var yTemp = 0.0
     var iter = 0.0
     var dIter = 0.0
     var gGML = 0.0
@@ -105,9 +106,9 @@ struct ArtImage {
     var fIterMinTop = 0.0
     var fIterMins = [Double](repeating: 0.0, count: 4)
     var fIterMin = 0.0
-    var p = 0.0
-    var test1 = 0.0
-    var test2 = 0.0
+//    var p = 0.0
+//    var test1 = 0.0
+//    var test2 = 0.0
 
     let rSqLimit = shapeInputs.rSqLimit
     rSqMax = 1.01 * (rSqLimit + 2) * (rSqLimit + 2)
@@ -125,30 +126,41 @@ struct ArtImage {
         xx = x0
         yy = y0
         rSq = xx * xx + yy * yy
+   //     rSq = pow(xx, 2) + pow(yy, 2)
         iter = 0.0
 
-        p = sqrt((xx - 0.25) * (xx - 0.25) + yy * yy)
-        test1 = p - 2.0 * p * p + 0.25
-        test2 = (xx + 1.0) * (xx + 1.0) + yy * yy
+ //       p = sqrt((xx - 0.25) * (xx - 0.25) + yy * yy)
+ //       test1 = p - 2.0 * p * p + 0.25
+ //       test2 = (xx + 1.0) * (xx + 1.0) + yy * yy
 
-        if xx < test1 || test2 < 0.0625 {
-          fIter[u][v] = iterationsMax // black
-          iter = iterationsMax // black
-        } // end if
+ //       if xx < test1 || test2 < 0.0625 {
+ //         fIter[u][v] = iterationsMax // black
+  //        iter = iterationsMax // black
+  //      } // end if
 
-        else {
+ //       else {
           for i in 1 ... Int(iterationsMax) {
             if rSq >= rSqLimit {
               break
             }
 
-            xTemp = xx * xx - yy * yy + x0
-            yy = 2 * xx * yy + y0
+    //        xTemp = xx * xx - yy * yy + x0
+    //        yy = 2 * xx * yy + y0
+    //        xx = xTemp
+            
+            xTemp = xx*xx*xx - 3*xx*yy*yy + x0
+            yy = 3*xx*xx*yy - yy*yy*yy + y0
             xx = xTemp
-            rSq = xx * xx + yy * yy
+            
+   //         yTemp = 2 * xx * yy + y0
+    //        xx = xx*xx - yy*yy + x0
+    //        yy = yTemp
+            
+    //        rSq = xx * xx + yy * yy
+            rSq = pow(xx, 2) + pow(yy, 2)
             iter = Double(i)
           }
-        } // end else
+ //       } // end else
 
         if iter < iterationsMax {
           dIter = Double(-(log(log(rSq)) - gGL) / gGML)
