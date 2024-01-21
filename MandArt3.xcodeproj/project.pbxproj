@@ -65,7 +65,6 @@
 		8839D4D52B5D82E600C5D361 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839D49C2B5D82E600C5D361 /* ContentView.swift */; };
 		8839D4D62B5D82E600C5D361 /* PanelDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839D49D2B5D82E600C5D361 /* PanelDisplay.swift */; };
 		8839D4D72B5D82E600C5D361 /* WelcomeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839D49E2B5D82E600C5D361 /* WelcomeMainView.swift */; };
-		8839D4D92B5D845100C5D361 /* ArtInputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839D4D82B5D845100C5D361 /* ArtInputs.swift */; };
 		8845506629AE3C8D008F202A /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 8845506529AE3C8D008F202A /* Resources */; };
 		88BECC6C2B1824BC00770843 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 88BECC6B2B1824BC00770843 /* README.md */; };
 		88BECC6E2B1824C700770843 /* CARE_AND_FEEDING.md in Resources */ = {isa = PBXBuildFile; fileRef = 88BECC6D2B1824C700770843 /* CARE_AND_FEEDING.md */; };
@@ -137,7 +136,6 @@
 		8839D49C2B5D82E600C5D361 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8839D49D2B5D82E600C5D361 /* PanelDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanelDisplay.swift; sourceTree = "<group>"; };
 		8839D49E2B5D82E600C5D361 /* WelcomeMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeMainView.swift; sourceTree = "<group>"; };
-		8839D4D82B5D845100C5D361 /* ArtInputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtInputs.swift; sourceTree = "<group>"; };
 		8845506529AE3C8D008F202A /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		889E3F22293A7733009944AC /* MandArt3Release.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MandArt3Release.entitlements; sourceTree = "<group>"; };
 		88A21FA8289F557B004DFA34 /* MandArt3.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = MandArt3.entitlements; sourceTree = "<group>"; };
@@ -253,7 +251,6 @@
 			children = (
 				8839D47B2B5D82E600C5D361 /* ArtGrid.swift */,
 				8839D4792B5D82E600C5D361 /* ArtImage.swift */,
-				8839D4D82B5D845100C5D361 /* ArtInputs.swift */,
 				8839D47A2B5D82E600C5D361 /* GradientGrid.swift */,
 				8839D47E2B5D82E600C5D361 /* GradientImage.swift */,
 				8839D47C2B5D82E600C5D361 /* MAFormatters.swift */,
@@ -440,7 +437,6 @@
 				8839D4CA2B5D82E600C5D361 /* WelcomeView.swift in Sources */,
 				8839D4B62B5D82E600C5D361 /* ArtGrid.swift in Sources */,
 				8839D4B82B5D82E600C5D361 /* MandMath.swift in Sources */,
-				8839D4D92B5D845100C5D361 /* ArtInputs.swift in Sources */,
 				8839D49F2B5D82E600C5D361 /* ImageViewModel.swift in Sources */,
 				8839D4CF2B5D82E600C5D361 /* SliderTextView.swift in Sources */,
 				8839D4A22B5D82E600C5D361 /* PictureDefinition.swift in Sources */,
