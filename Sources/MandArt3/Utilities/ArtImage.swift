@@ -139,6 +139,8 @@ struct ArtImage {
   //      } // end if
 
  //       else {
+ 
+ 
           for i in 1 ... Int(iterationsMax) {
             if rSq >= rSqLimit {
               break
