@@ -3,7 +3,7 @@ import UniformTypeIdentifiers
 
 /// A view representing a row in the color list.
 struct TabColorListRow: View {
-  @ObservedObject var doc: MandArt3Document
+  @ObservedObject var doc: MandArtDocument
   @State private var showingPrintablePopups = false
   @State private var didChange = false
 

@@ -3,7 +3,7 @@ import UniformTypeIdentifiers
 
 @available(macOS 12.0, *)
 struct TabTune: View {
-  @ObservedObject var doc: MandArt3Document
+  @ObservedObject var doc: MandArtDocument
   @Binding var requiresFullCalc: Bool
   @Binding var showGradient: Bool
 

@@ -9,7 +9,7 @@ struct WelcomeMainInformationView: View {
 
   var body: some View {
     VStack(alignment: .leading, spacing: 10) {
-      Text("MandArt3 is the ultimate app for creating MandArt with exponent of 3 instead of 2.")
+      Text("MandArt3 is the ultimate app for creating MandArt with exponent 3 instead of 2.")
         .font(.title3)
         .fixedSize(horizontal: false, vertical: false) // wrap
 

@@ -3,7 +3,7 @@ import UniformTypeIdentifiers
 
 @available(macOS 12.0, *)
 struct TabFindImageCenter: View {
-  @ObservedObject var doc: MandArt3Document
+  @ObservedObject var doc: MandArtDocument
   @Binding var requiresFullCalc: Bool
 
   var body: some View {

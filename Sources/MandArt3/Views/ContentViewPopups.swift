@@ -6,7 +6,7 @@ import UniformTypeIdentifiers
 @available(macOS 12.0, *)
 struct ContentViewPopups: View {
   /// An observed document object containing the necessary data and state for rendering the content.
-  @ObservedObject var doc: MandArt3Document
+  @ObservedObject var doc: MandArtDocument
 
   /// An observed object responsible for managing the popups' display state.
   @ObservedObject var popupManager: PopupManager
@@ -20,7 +20,7 @@ struct ContentViewPopups: View {
   ///   - popupManager: An object managing the popups' display state.
   ///   - requiresFullCalc: A binding to control the calc
   init(
-    doc: MandArt3Document,
+    doc: MandArtDocument,
     popupManager: PopupManager,
     requiresFullCalc: Binding<Bool>
   ) {

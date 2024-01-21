@@ -28,7 +28,7 @@ let package = Package(
     targets: [
         // targets
         .target(
-            name: "MandArt3",
+            name: "MandArt",
             dependencies: []
         ),
 //        .testTarget(

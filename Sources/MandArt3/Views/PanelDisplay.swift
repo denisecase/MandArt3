@@ -6,22 +6,22 @@ import UniformTypeIdentifiers
 /// This view manages the display of either a gradient or a bitmap image, depending on user selection,
 /// and it supports interactive gestures for user engagement.
 ///
-/// The view observes a `MandArt3Document` object and binds to `requiresFullCalc` and `showGradient`
+/// The view observes a `MandArtDocument` object and binds to `requiresFullCalc` and `showGradient`
 /// to determine the state and type of image display. It uses a gesture system for interactive
 /// image manipulation, allowing users to dynamically adjust the center of the Mandelbrot set rendering
 /// by tapping (to specify the new center) and by dragging gestures.
 ///
-/// The view dynamically updates based on changes in the `MandArt3Document`.
+/// The view dynamically updates based on changes in the `MandArtDocument`.
 ///  It can show either a gradient representation between two adjacent colors or a fully calculated Mandelbrot set
 /// image.
 ///
 /// - Parameters:
-///   - doc: An observed `MandArt3Document` object containing image and calculation data.
+///   - doc: An observed `MandArtDocument` object containing image and calculation data.
 ///   - requiresFullCalc: A binding Bool indicating whether a full calculation is required for the image.
 ///   - showGradient: A binding Bool determining whether to show a gradient or a bitmap image.
 @available(macOS 12.0, *)
 struct PanelDisplay: View {
-  @ObservedObject var doc: MandArt3Document
+  @ObservedObject var doc: MandArtDocument
   @Binding var requiresFullCalc: Bool
   @Binding var showGradient: Bool
   @State private var selectedTab = 0

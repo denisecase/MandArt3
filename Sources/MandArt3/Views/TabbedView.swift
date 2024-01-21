@@ -3,14 +3,14 @@ import UniformTypeIdentifiers
 
 @available(macOS 12.0, *)
 struct TabbedView: View {
-  @ObservedObject var doc: MandArt3Document
+  @ObservedObject var doc: MandArtDocument
   @ObservedObject var popupManager = PopupManager()
   @Binding var requiresFullCalc: Bool
   @Binding var showGradient: Bool
   @State private var selectedTab = 0
 
   init(
-    doc: MandArt3Document,
+    doc: MandArtDocument,
     popupManager: PopupManager,
     requiresFullCalc: Binding<Bool>,
     showGradient: Binding<Bool>

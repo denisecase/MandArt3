@@ -6,7 +6,7 @@ import UniformTypeIdentifiers
 /// This view allows users to interact with and control
 /// the parameters of the Mandelbrot set generation and visualization process.
 ///
-/// The view observes a `MandArt3Document` object for data related to the Mandelbrot set calculations
+/// The view observes a `MandArtDocument` object for data related to the Mandelbrot set calculations
 /// and binds to `requiresFullCalc` and `showGradient` to manage state updates and view rendering.
 /// It also manages pop-up interactions through a `PopupManager` object, enhancing the user experience.
 ///
@@ -15,20 +15,20 @@ import UniformTypeIdentifiers
 /// critical interface for users to interact with the core aspects of the MandArt application.
 ///
 /// - Parameters:
-///   - doc: An observed `MandArt3Document` object containing the current state and data of the Mandelbrot set.
+///   - doc: An observed `MandArtDocument` object containing the current state and data of the Mandelbrot set.
 ///   - popupManager: An observed `PopupManager` object for managing pop-up interactions within the application.
 ///   - requiresFullCalc: A binding Bool that indicates whether a full calculation of the Mandelbrot set is needed.
 ///   - showGradient: A binding Bool that determines whether to display a gradient preview or a fully calculated image.
 @available(macOS 12.0, *)
 struct PanelUI: View {
-  @ObservedObject var doc: MandArt3Document
+  @ObservedObject var doc: MandArtDocument
   @ObservedObject var popupManager = PopupManager()
   @Binding var requiresFullCalc: Bool
   @Binding var showGradient: Bool
   @State private var selectedTab = 0
 
   init(
-    doc: MandArt3Document,
+    doc: MandArtDocument,
     popupManager: PopupManager,
     requiresFullCalc: Binding<Bool>,
     showGradient: Binding<Bool>

@@ -9,7 +9,7 @@ import UniformTypeIdentifiers
 /// - Requires: macOS 12.0 or later
 @available(macOS 12.0, *)
 struct TabFindScale: View {
-  @ObservedObject var doc: MandArt3Document
+  @ObservedObject var doc: MandArtDocument
   @Binding var requiresFullCalc: Bool
   @State private var scale: Double
   @State private var scaleMultiplier: Double = 5.0000
@@ -30,7 +30,7 @@ struct TabFindScale: View {
   /// - Parameters:
   ///   - doc: The document containing the image and scale data.
   ///   - requiresFullCalc: A binding to a Boolean indicating whether a full recalculation is required.
-  init(doc: MandArt3Document, requiresFullCalc: Binding<Bool>) {
+  init(doc: MandArtDocument, requiresFullCalc: Binding<Bool>) {
     _doc = ObservedObject(initialValue: doc)
     _requiresFullCalc = requiresFullCalc
     _scale = State(initialValue: doc.picdef.scale)

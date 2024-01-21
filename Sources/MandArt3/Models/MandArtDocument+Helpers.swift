@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 
 @available(macOS 12.0, *)
-extension MandArt3Document {
+extension MandArtDocument {
   var currentWindowTitle: String {
     return NSApp.mainWindow?.title ?? ""
   }

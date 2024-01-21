@@ -16,7 +16,7 @@
 1. XCode / Search / "version". Increment version number in 3 places:
    - Info.plist - **Build Version**
    - Info.plist - **Bundle versions string, short**
-   - MandArt3.xcodeproj / Build Settings / **Marketing Version**
+   - MandArt.xcodeproj / Build Settings / **Marketing Version**
 1. Menu / Product / Destination - set to **Any Mac**
 1. Menu / Product / **Archive**
 
@@ -42,7 +42,7 @@ You were successful!
 1. Open Safari.
 1. Go to **App Store Connect**.
 1. Select **My Apps**.
-1. Click on **MandArt3 app name**.
+1. Click on **MandArt app name**.
 1. Click on blue plus sign in the upper left corner. A window will pop up.
 1. Type new store version number (e.g. 7.1) and click **Create**.
 1. Update **Describe What's New** text, other content. Screenshots must be 1440x900px.
@@ -75,4 +75,4 @@ You were successful!
 
 ## Source 
 
-Source: <https://denisecase.github.io/MandArt3/CARE_AND_FEEDING.html>
+Source: <https://denisecase.github.io/MandArt/CARE_AND_FEEDING.html>

@@ -2,7 +2,7 @@ import SwiftUI
 
 @available(macOS 12.0, *)
 struct PopupColorSlice: View {
-  @ObservedObject var doc: MandArt3Document
+  @ObservedObject var doc: MandArtDocument
   @Binding var selectedColor: (r: Int, g: Int, b: Int)?
 
   let arrColors: [Color]
@@ -12,7 +12,7 @@ struct PopupColorSlice: View {
 
 
   init(
-    doc: MandArt3Document,
+    doc: MandArtDocument,
     selectedColor: Binding<(r: Int, g: Int, b: Int)?>,
     arrColors: [Color],
     start: Int,

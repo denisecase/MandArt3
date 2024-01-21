@@ -4,7 +4,7 @@ import SwiftUI
 
 @available(macOS 12.0, *)
 struct PopupColorCube: View {
-  @ObservedObject var doc: MandArt3Document
+  @ObservedObject var doc: MandArtDocument
   @ObservedObject var popupManager: PopupManager
   @State var selectedColor: (r: Int, g: Int, b: Int)?
 
@@ -12,7 +12,7 @@ struct PopupColorCube: View {
   let cubeCount: Int = 8
 
   init(
-    doc: MandArt3Document,
+    doc: MandArtDocument,
     popupManager: PopupManager,
     hues: [Hue]
   ) {

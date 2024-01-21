@@ -12,12 +12,12 @@ class WelcomeWindowController: NSWindowController {
   /// - Parameter appState: The application state to be used.
   init(appState: AppState) {
     self.appState = appState
-    let width = MandArt3App.AppConstants.defaultWidth()
-    let height = MandArt3App.AppConstants.defaultHeight()
-    let minW = MandArt3App.AppConstants.minWelcomeWidth
-    let minH = MandArt3App.AppConstants.minWelcomeHeight
-    let maxW = MandArt3App.AppConstants.maxWelcomeWidth()
-    let maxH = MandArt3App.AppConstants.maxWelcomeHeight()
+    let width = MandArtApp.AppConstants.defaultWidth()
+    let height = MandArtApp.AppConstants.defaultHeight()
+    let minW = MandArtApp.AppConstants.minWelcomeWidth
+    let minH = MandArtApp.AppConstants.minWelcomeHeight
+    let maxW = MandArtApp.AppConstants.maxWelcomeWidth()
+    let maxH = MandArtApp.AppConstants.maxWelcomeHeight()
 
     let window = NSWindow(
       contentRect: NSRect(

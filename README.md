@@ -1,4 +1,4 @@
-# MandArt3
+# MandArt
 
 ![Github](https://img.shields.io/badge/macOS-12%2B-brightgreen)
 [![macos-sonoma-14](https://img.shields.io/badge/macos-sonoma-blue.svg)](https://www.apple.com/macos/sonoma)
@@ -11,14 +11,27 @@
 [![xcode-version](https://img.shields.io/badge/xcode-15-blue)](https://developer.apple.com/xcode/)
 [![xcode-version](https://img.shields.io/badge/xcode-14-brightgreen)](https://developer.apple.com/xcode/)
 
-SwiftUI macOS app to create custom art using a variation of the Mandelbrot set, where the exponent is not 2, but 3.
+SwiftUI macOS app to create custom art using the Mandelbrot set.
 
 - Applied Physics Engineering
 - [Bruce Johnson](https://github.com/bruceranger)
 - [App Store Connect](https://appstoreconnect.apple.com)
-- [Care and Feeding of MandArt3](CARE_AND_FEEDING.md)
+- [Care and Feeding of MandArt](CARE_AND_FEEDING.md)
 
-## See Also
+## Learn More
 
-- [MandArt](https://github.com/brucehjohnson/MandArt)
-- [GrandArt (any exponent)](https://github.com/denisecase/GrandArt)
+- [Documentation](https://denisecase.github.io/MandArt-Docs/documentation/mandart3/)
+
+## MandArt Discoveries
+
+- [MandArt-Discoveries](https://github.com/denisecase/MandArt-Discoveries)
+
+## MandArt Timeline
+
+- 1985-08-30. Idea started with [1985 Scientific American article on the Mandlebrot set](https://www.scientificamerican.com/article/mandelbrot-set/). 
+- 2019-06-03. SwiftUI released.
+- 2020-06-24. "Learn SwiftUI" added to list.
+- 2020-06-29. Started Mand3 using Swift UI.
+- 2020-07-15. Started Mand4 using Storyboard. 
+- 2020-08-14. Started Mand5 using SwiftUI.
+- 2023-03-04. MandArt beta release.

@@ -4,18 +4,18 @@ import UniformTypeIdentifiers
 /// A SwiftUI view that represents a list of tab colors.
 ///
 /// This view is available on macOS 12.0 and later. It uses a `GeometryReader` to adapt its size to the available space.
-/// It displays a list of colors (`hues`) from a `MandArt3Document` object. Each hue is represented by a
+/// It displays a list of colors (`hues`) from a `MandArtDocument` object. Each hue is represented by a
 /// `TabColorListRow`.
 /// The list allows for reordering of colors, which is handled by the `moveHues(from:to:)` function.
 ///
 /// - Parameters:
-///   - doc: An `ObservedObject` of type `MandArt3Document`. This is the document model containing the data.
+///   - doc: An `ObservedObject` of type `MandArtDocument`. This is the document model containing the data.
 ///   - requiresFullCalc: A `Binding<Bool>` indicating whether a full calculation is required.
 ///   - showGradient: A `Binding<Bool>` indicating whether to show the gradient.
 ///
 @available(macOS 12.0, *)
 struct TabColorList: View {
-  @ObservedObject var doc: MandArt3Document
+  @ObservedObject var doc: MandArtDocument
   @Binding var requiresFullCalc: Bool
   @Binding var showGradient: Bool
 
@@ -37,7 +37,7 @@ struct TabColorList: View {
 
   /// Handles the reordering of hues within the document.
   ///
-  /// When hues are moved in the list, this function updates their order in the `MandArt3Document`.
+  /// When hues are moved in the list, this function updates their order in the `MandArtDocument`.
   /// It also reassigns the hue numbers to reflect the new order.
   ///
   /// - Parameters:

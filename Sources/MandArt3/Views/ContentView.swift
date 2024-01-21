@@ -12,7 +12,7 @@ var contextImageGlobal: CGImage?
 @available(macOS 12.0, *)
 struct ContentView: View {
   @EnvironmentObject var appState: AppState
-  @ObservedObject var doc: MandArt3Document
+  @ObservedObject var doc: MandArtDocument
   @StateObject var popupManager = PopupManager()
   @State var requiresFullCalc = true
   @State var showGradient: Bool = false

@@ -2,7 +2,7 @@ import SwiftUI
 
 // Provide operations on the MandArt document.
 @available(macOS 12.0, *)
-extension MandArt3Document {
+extension MandArtDocument {
   private var hueCount: Int {
     return picdef.hues.count
   }

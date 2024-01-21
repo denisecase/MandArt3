@@ -5,7 +5,7 @@ import SwiftUI
 /// and manages whether a full calculation is required or if a gradient should be shown.
 @available(macOS 12.0, *)
 class ImageViewModel: ObservableObject {
-  @Published var doc: MandArt3Document
+  @Published var doc: MandArtDocument
   @Binding var requiresFullCalc: Bool
   @Binding var showGradient: Bool
 
@@ -32,10 +32,10 @@ class ImageViewModel: ObservableObject {
 
   /// Initializes a new instance of `ImageViewModel`.
   /// - Parameters:
-  ///   - doc: A `MandArt3Document` instance containing the image details.
+  ///   - doc: A `MandArtDocument` instance containing the image details.
   ///   - requiresFullCalc: A binding to a Boolean value indicating whether a full image calculation is required.
   ///   - showGradient: A binding to a Boolean value indicating whether to show a gradient.
-  init(doc: MandArt3Document, requiresFullCalc: Binding<Bool>, showGradient: Binding<Bool>) {
+  init(doc: MandArtDocument, requiresFullCalc: Binding<Bool>, showGradient: Binding<Bool>) {
     self.doc = doc
     _requiresFullCalc = requiresFullCalc
     _showGradient = showGradient
