@@ -1,0 +1,6 @@
+project: MandArt3.xcodeproj
+retain_objc_accessible: true
+schemes:
+- MandArt3
+targets:
+- MandArt3
