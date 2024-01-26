@@ -139,15 +139,12 @@ struct ArtImage {
   //      } // end if
 
  //       else {
- 
- 
           for i in 1 ... Int(iterationsMax) {
             if rSq >= rSqLimit {
               break
             }
             
             
-
     //        xTemp = xx * xx - yy * yy + x0
     //        yy = 2 * xx * yy + y0
     //        xx = xTemp
