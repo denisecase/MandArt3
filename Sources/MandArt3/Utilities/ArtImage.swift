@@ -92,7 +92,6 @@ struct ArtImage {
     var xx = 0.0
     var yy = 0.0
     var xTemp = 0.0
- //   var yTemp = 0.0
     var iter = 0.0
     var dIter = 0.0
     var gGML = 0.0
@@ -126,7 +125,6 @@ struct ArtImage {
         xx = x0
         yy = y0
         rSq = xx * xx + yy * yy
-   //     rSq = pow(xx, 2) + pow(yy, 2)
         iter = 0.0
 
  //       p = sqrt((xx - 0.25) * (xx - 0.25) + yy * yy)
@@ -144,7 +142,6 @@ struct ArtImage {
               break
             }
             
-            
     //        xTemp = xx * xx - yy * yy + x0
     //        yy = 2 * xx * yy + y0
     //        xx = xTemp
@@ -152,10 +149,6 @@ struct ArtImage {
             xTemp = xx*xx*xx - 3*xx*yy*yy + x0
             yy = 3*xx*xx*yy - yy*yy*yy + y0
             xx = xTemp
-            
-   //         yTemp = 2 * xx * yy + y0
-    //        xx = xx*xx - yy*yy + x0
-    //        yy = yTemp
             
     //        rSq = xx * xx + yy * yy
             rSq = pow(xx, 2) + pow(yy, 2)
