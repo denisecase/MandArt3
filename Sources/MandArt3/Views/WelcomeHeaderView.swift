@@ -6,7 +6,7 @@ import SwiftUI
 struct WelcomeHeaderView: View {
   var body: some View {
     VStack(spacing: 10) {
-      Text("Welcome to MandArt")
+      Text("Welcome to MandArt3")
         .font(.title)
         .fontWeight(.bold)
       Spacer().frame(height: 10)

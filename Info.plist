@@ -63,7 +63,7 @@
 			<key>UTTypeDescription</key>
 			<string>MandArt document</string>
 			<key>UTTypeIdentifier</key>
-			<string>org.bhj.mandart</string>
+			<string>org.bhj.mandart3</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>

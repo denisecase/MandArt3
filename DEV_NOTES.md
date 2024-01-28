@@ -27,7 +27,3 @@ xcodebuild -scheme MandArt3 -destination 'platform=macOS' -derivedDataPath 'Deri
 periphery scan --skip-build --index-store-path 'DerivedData/MandArt3/Index.noindex/DataStore/'
 ```
 
-## Create Documentation
-
-To update the hosted documents, follow the process described in the
-[MandArt3-Docs](https://github.com/denisecase/MandArt3-Docs) repo.
