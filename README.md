@@ -1,4 +1,4 @@
-# MandArt
+# MandArt3
 
 ![Github](https://img.shields.io/badge/macOS-12%2B-brightgreen)
 [![macos-sonoma-14](https://img.shields.io/badge/macos-sonoma-blue.svg)](https://www.apple.com/macos/sonoma)
@@ -11,7 +11,7 @@
 [![xcode-version](https://img.shields.io/badge/xcode-15-blue)](https://developer.apple.com/xcode/)
 [![xcode-version](https://img.shields.io/badge/xcode-14-brightgreen)](https://developer.apple.com/xcode/)
 
-SwiftUI macOS app to create custom art using the Mandelbrot set.
+SwiftUI macOS app to create custom art using the Mandelbrot set with a factor of 3.
 
 - Applied Physics Engineering
 - [Bruce Johnson](https://github.com/bruceranger)
@@ -20,7 +20,7 @@ SwiftUI macOS app to create custom art using the Mandelbrot set.
 
 ## Learn More
 
-- [Documentation](https://denisecase.github.io/MandArt-Docs/documentation/mandart3/)
+- [Documentation](https://denisecase.github.io/MandArt-Docs/documentation/mandart/)
 
 ## MandArt Discoveries
 
