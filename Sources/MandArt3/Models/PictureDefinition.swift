@@ -28,12 +28,12 @@ import SwiftUI
 @available(macOS 12.0, *)
 struct PictureDefinition: Codable, Identifiable {
   var id = UUID()
-  var xCenter: Double = -0.75
+  var xCenter: Double = 0.0
   var yCenter: Double = 0.0
-  var scale: Double = 430.0
+  var scale: Double = 360.0
   var iterationsMax: Double = 10000.0
   var rSqLimit: Double = 400.0
-  var imageWidth: Int = 1100
+  var imageWidth: Int = 1000
   var imageHeight: Int = 1000
   var nBlocks: Int = 60
   var spacingColorFar: Double = 5.0

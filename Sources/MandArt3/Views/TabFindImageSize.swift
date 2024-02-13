@@ -23,7 +23,7 @@ struct TabFindImageSize: View {
         VStack {
           Text("Width, px:")
           DelayedTextFieldInt(
-            placeholder: "1100",
+            placeholder: "1000",
             value: $doc.picdef.imageWidth,
             formatter: MAFormatters.fmtImageWidthHeight
           )

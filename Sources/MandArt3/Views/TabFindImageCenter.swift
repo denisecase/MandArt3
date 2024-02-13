@@ -18,7 +18,7 @@ struct TabFindImageCenter: View {
           Text("Enter horizontal center")
           Text("Between -2 and 2")
           DelayedTextFieldDouble(
-            placeholder: "-0.75",
+            placeholder: "0.0",
             value: $doc.picdef.xCenter,
             formatter: MAFormatters.fmtXY
           )
